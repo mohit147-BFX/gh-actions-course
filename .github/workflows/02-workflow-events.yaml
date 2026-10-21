@@ -1,1 +1,13 @@
 name: 02 - Workflow Events
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello from GitHub Actions"
